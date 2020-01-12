@@ -1,0 +1,123 @@
+{
+    "name": "Structurizr Express",
+    "model": {
+        "softwareSystems": [
+            {
+                "id": 2,
+                "name": "Internet Banking System",
+                "description": "Allows customers to view information about their bank accounts and make payments.",
+                "type": "SoftwareSystem",
+                "tags": "Element,Software System,Internal",
+                "location": "Internal",
+                "containers": [],
+                "relationships": [
+                    {
+                        "id": 5,
+                        "sourceId": 2,
+                        "destinationId": 3,
+                        "description": "Uses",
+                        "technology": "",
+                        "order": 1,
+                        "tags": "Relationship",
+                        "vertices": []
+                    }
+                ],
+                "x": 1015,
+                "y": 713
+            },
+            {
+                "id": 3,
+                "name": "Mainframe Banking System",
+                "description": "Stores all of the core banking information about customers, accounts, transactions, etc.",
+                "type": "SoftwareSystem",
+                "tags": "Element,Software System,Internal",
+                "location": "Internal",
+                "containers": [],
+                "relationships": [],
+                "x": 1015,
+                "y": 1210
+            }
+        ],
+        "people": [
+            {
+                "id": 1,
+                "name": "Customer",
+                "description": "A customer of the bank.",
+                "type": "Person",
+                "tags": "Element,Person",
+                "relationships": [
+                    {
+                        "id": 4,
+                        "sourceId": 1,
+                        "destinationId": 2,
+                        "description": "Uses",
+                        "technology": "",
+                        "order": 1,
+                        "tags": "Relationship",
+                        "vertices": []
+                    }
+                ],
+                "x": 1040,
+                "y": 117
+            }
+        ]
+    },
+    "views": {
+        "configuration": {
+            "styles": {
+                "elements": [
+                    {
+                        "tag": "Person",
+                        "background": "#08427b",
+                        "color": "#ffffff",
+                        "shape": "Person"
+                    },
+                    {
+                        "tag": "Software System",
+                        "background": "#1168bd",
+                        "color": "#ffffff"
+                    }
+                ],
+                "relationships": []
+            }
+        },
+        "systemLandscapeViews": [],
+        "systemContextViews": [
+            {
+                "paperSize": "A5_Landscape",
+                "description": "The system context diagram for the Internet Banking System.",
+                "type": "SystemContext",
+                "softwareSystemId": 2,
+                "key": "express",
+                "elements": [
+                    {
+                        "id": 1,
+                        "x": 1040,
+                        "y": 117
+                    },
+                    {
+                        "id": 2,
+                        "x": 1015,
+                        "y": 713
+                    },
+                    {
+                        "id": 3,
+                        "x": 1015,
+                        "y": 1210
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": 4
+                    },
+                    {
+                        "id": 5
+                    }
+                ]
+            }
+        ],
+        "containerViews": [],
+        "componentViews": [],
+        "dynamicViews": []
+    }
+}

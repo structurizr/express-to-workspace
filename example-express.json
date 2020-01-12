@@ -1,0 +1,81 @@
+{
+  "type": "System Context",
+  "scope": "Internet Banking System",
+  "description": "The system context diagram for the Internet Banking System.",
+  "size": "A5_Landscape",
+
+
+  "elements": [
+    {
+      "type": "Person",
+      "name": "Customer",
+      "description": "A customer of the bank.",
+      "tags": "",
+      "position": "1040,117"
+    },
+    {
+      "type": "Software System",
+      "name": "Internet Banking System",
+      "description": "Allows customers to view information about their bank accounts and make payments.",
+      "tags": "Internal",
+      "position": "1015,713"
+    },
+    {
+      "type": "Software System",
+      "name": "Mainframe Banking System",
+      "description": "Stores all of the core banking information about customers, accounts, transactions, etc.",
+      "tags": "Internal",
+      "position": "1015,1210"
+    }
+  ],
+
+
+  "relationships": [
+    {
+      "source": "Customer",
+      "description": "Uses",
+      "technology": "",
+      "destination": "Internet Banking System",
+      "tags": ""
+    },
+    {
+      "source": "Internet Banking System",
+      "description": "Uses",
+      "technology": "",
+      "destination": "Mainframe Banking System",
+      "tags": ""
+    }
+  ],
+
+
+  "styles": [
+    {
+      "type": "element",
+      "description": "",
+      "tag": "Person",
+      "width": "",
+      "height": "",
+      "background": "#08427b",
+      "color": "#ffffff",
+      "fontSize": "",
+      "border": "",
+      "opacity": "",
+      "shape": "Person",
+      "metadata": ""
+    },
+    {
+      "type": "element",
+      "description": "",
+      "tag": "Software System",
+      "width": "",
+      "height": "",
+      "background": "#1168bd",
+      "color": "#ffffff",
+      "fontSize": "",
+      "border": "",
+      "opacity": "",
+      "shape": "",
+      "metadata": ""
+    }
+  ]
+}
